@@ -1,0 +1,83 @@
+/* Showcase
+------------------------*/
+#showcase { margin-bottom:10px; }
+
+#showcase .promo-lead,
+#showcase .promo-lead .lead { float:none; width:980px; height:409px; }
+#showcase .promo-lead { position:relative; font-size:16px; line-height:1.5; color:#000; }
+#showcase .promo-lead a.block { color:#000; }
+#showcase .promo-lead .lead { display:block; }
+
+#showcase.promo-rotation .promo-lead .lead { position:absolute; }
+
+#showcase .promos { padding:10px 0; margin-bottom:10px; zoom:1; *margin-right:-2px; background:url(http://images.apple.com/v/mac/home/c/images/showcase_divider.jpg) no-repeat; }
+#showcase .promos:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+#showcase .promos a { margin-bottom:0; margin-left:8px; }
+#showcase .promos a:nth-child(1n) { margin-left:10px; }
+#showcase .promos a.first { margin-left:0; }
+
+#showcase .promos { position:relative; height:210px; }
+#showcase .promos a { position:absolute; top:10px; }
+#showcase .promos a.first { left:0; }
+#showcase .promos a.second { left:320px; *left:322px; }
+#showcase .promos a.third { right:0; }
+
+
+/* College
+------------------------*/
+
+#college { position:relative; clear:both; padding:24px 0 0 200px; width:767px; height:83px; z-index:1;}
+#college a.block:active, #college a.block:selected, #college a.block:visited { border: none; outline: none; }
+#college img.hero { position: absolute; top:0; left:0; z-index:-1;}
+#college img.title { margin-top:0; }
+#college h1 { font-size:0; line-height:0 !important; margin-bottom:0; *margin-left: -7px; _margin-left: 0;}
+#college p { width:732px; line-height:20px; margin: -2px 0 0 0; *margin-left: -7px; _margin-left: 0;}
+#college p.intro {color:#ffffff; font-size:15px;}
+#college p.terms {color:#ffffff; font-size:11px; position: absolute; bottom:7px; right:0; width:100px;}
+#college span.no-break { color:#ffffff; text-decoration: none; white-space: nowrap; }
+#college span.more { background: url(http://images.apple.com/mac/home/images/morearrow_green.gif) no-repeat 100% 63%; color: #0055cc;}
+
+/* Why Mac
+------------------------*/
+#whymac { margin-bottom:10px; }
+#whymac a.more:hover { text-decoration:underline; }
+#whymac h1 { font-size:1.5em; font-weight:normal; margin-bottom:0; }
+#whymac p { font-size:1.167em; line-height:1.45em; }
+#whymac ul { font-size:1.167em; line-height:1.45em; }
+#whymac .column { position:relative; z-index:1; padding:15px 0 0 20px; min-height:255px; _height:255px; background:#fcfcfc no-repeat; }
+#whymac .column img.bottom { position:absolute; z-index:1; bottom:7px; right:13px; }
+#whymac .first { width:304px; padding-right:160px; background-position:98% 100%; } /* remove this background-position in version d */
+#whymac .first img { margin-bottom:-8px; margin-right:5px; } /* remove this line in version d */
+#whymac .first img.bottom { margin-bottom:-7px; margin-right:-6px; }
+#whymac .last { width:334px; padding-right:130px; background-position:94% 94%; } /* remove this background-position in version d */
+
+
+/* Bottom Promo
+------------------------*/
+#education { margin-bottom:10px; width:949px; height:170px; padding-left:31px; background:#fff no-repeat; }
+#education span.more { display:inline; float:none; }
+#education h2,
+#education p { font-size:16px; line-height:20px; }
+#education p { width:555px; color:#888; margin-bottom:11px; }
+#education h2 { padding-top:30px; margin-bottom:0; font-weight:bold; }
+#education ul { width:600px; }
+#education ul li { float:left; }
+#education ul li a { font-size:14px; line-height:20px; }
+#education ul li.cta1,
+#education ul li.cta2 { width:158px; }
+
+
+/* Geo Alt
+------------------------*/
+#whymac.geo-alt { width:980px; }
+#whymac.geo-alt .column { min-height:137px; _height:137px; }
+#whymac.geo-alt .last { width:460px; padding-right:50px; padding-top:22px; background:none; }
+#whymac.geo-alt .last h1 { line-height:1.75em; }
+#whymac.geo-alt .last p { margin-bottom:15px; }
+#whymac.geo-alt .last ul li { float:left; margin-right:20px; }
+#whymac.geo-alt img.left { margin:0 0 0 80px; }
+
+
+
+
+

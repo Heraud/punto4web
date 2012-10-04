@@ -1,0 +1,92 @@
+/* Misc
+------------------------*/
+html, body { background-color:#f5f6f7; }
+#main { width:980px; margin:0 auto; *width:982px; }
+
+
+/* Misc
+------------------------*/
+.replaced { text-indent:-1000em; overflow:hidden; height:0; margin:0; padding:0; }
+
+a.block { display:block; color:inherit; text-decoration:none; }
+a.block * { cursor:pointer; }
+a.block span.link,
+a.block span.more { color:#08c; }
+a.block span.more { white-space:nowrap; text-align:left; padding-right:10px; background:url(http://images.apple.com/global/elements/arrows/morearrow_08c.gif) no-repeat 100% 50%; }
+a.block:hover span.link,
+a.block:hover span.more { text-decoration:underline; }
+
+a.close { color:#888; display:block; float:left; padding-left:18px; background:url(http://images.apple.com/global/elements/buttons/close.png) no-repeat 0 0; text-decoration:none; text-transform:lowercase; }
+a.close:hover { color:#08c; background-position:0 -50px; }
+a.close.right { float:right; padding-right:18px; padding-left:0; background-position:100% 0; text-transform:none; }
+a.close.right:hover { background-position:100% -50px; }
+a.close.dark { color:#fff; background-image:url(http://images.apple.com/global/elements/buttons/close_dark_bg.png); }
+a.close.dark:hover { color:#00a2ff; background-image:url(http://images.apple.com/global/elements/buttons/close_dark_bg.png); }
+
+.right { float:right; }
+.left { float:left; }
+
+#main .sosumi { padding:18px 20px 0; }
+
+
+/* Product Browser
+------------------------*/
+.productbrowser li.pb-macbookair { margin-left:5px; }
+.productbrowser li.pb-macbookpro { margin-left:35px; margin-right:12px; }
+.productbrowser li.pb-imac       { margin-left:18px; margin-right:18px; }
+.productbrowser li.pb-macosx     { margin-left:-20px; }
+
+.productbrowser li.pb-magicmouse     { margin-left:-12px; }
+.productbrowser li.pb-magictrackpad  { margin-left:-32px; margin-right:4px; }
+.productbrowser li.pb-airportexpress { margin-left:-4px; }
+.productbrowser li.pb-airportextreme { margin-left:-13px; }
+.productbrowser li.pb-timecapsule    { margin-left:-6px; }
+
+.productbrowser li.pb-ilife { margin-right:16px; }
+.productbrowser li.pb-iwork { margin-right:10px; }
+.productbrowser li.pb-safari { margin-right:-1px; }
+.productbrowser li.pb-finalcut { margin-left:4px; margin-right:3px; }
+
+.productbrowser li.pb-displays,
+.productbrowser li.pb-displays a { width:150px; }
+
+.productbrowser li.pb-macosxserver { margin-left:6px; margin-right:12px; }
+.productbrowser li.pb-macproserver { margin-right:16px; }
+.productbrowser li.pb-ard          { margin-right:19px; }
+
+
+/* Footer
+------------------------*/
+#globalfooter { margin-top:12px; *width:980px; }
+#globalfooter p.sosumi { text-align:right; margin:-26px 0 0; *margin-top:-17px; }
+
+
+/* Buy Strip
+------------------------*/
+#buystrip { position:relative; width:auto; height:auto; padding:0; margin:0 auto 4px; border:none; 
+	background:#fff url(http://images.apple.com/v/mac/home/c/images/dividerup.jpg) no-repeat 0 100%; background-size:980px 134px;
+	border-bottom: 1px solid #d4d4d4;
+	-webkit-box-shadow:none; box-shadow:none;
+}
+#buystrip a.more:hover,
+#buystrip_extra a.more:hover { text-decoration:underline; }
+#buystrip h2 { margin:30px 0 0.4em 74px; text-align:center; }
+#buystrip h3 { margin:0 0 5px; }
+#buystrip h4 { margin:0 0 36px 74px; font-size:15px; font-weight:normal; text-align:center; color:#999; }
+
+#buystrip .column { width:215px; min-height:149px; _height:149px; margin-left:0px; padding:16px 0 6px 22px; border-right:1px solid #DADADA; }
+#buystrip .column.third { width:223px; }
+#buystrip .column.first { width:251px; padding-left:0; position:relative; }
+#buystrip .column.first img { margin-top:32px; }
+#buystrip .column.last { width:220px; background:none; border-right:0; }
+
+#buystrip .column p { width:198px; line-height:1.6em; margin-bottom:0; margin-left:0; }
+#buystrip .column.first p { width:auto; margin-left:46px; }
+#buystrip img.product { position:absolute; top:0; left:31px; }
+#buystrip .buynows-arrow { margin:7px 0 0 -1px; }
+
+#buystrip_extra { font-size: 11px; }
+#buystrip_extra .column p { margin-bottom: 12px; }
+#buystrip_extra .column { width:180px; padding:8px 0 0 35px; margin:0; }
+#buystrip_extra .column.last { width:480px; padding:6px 39px 0 0; }
+#buystrip_extra .column.last img { margin:0 7px -7px 0; }
