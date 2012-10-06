@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
 	<title>Punto4</title>
 	<meta name="Description" content="Tienda de publicidad que se encarga de diseñar diferentes tipos de banners, portadas, etc.">
+	<link rel="shortcut icon" href="img/logo.png">
 	
 	<!-- ARCHIVOS DEL TEMPLEATE PRINCIPAL -->
 	<link id="globalheader-stylesheet" rel="stylesheet" href="css/navigation.css" type="text/css">
@@ -24,122 +25,42 @@
 
 	<!-- ARCHIVOS PARA EL CAROUSEL -->	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="js/jquery.carouFredSel-5.6.4-packed.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('#carousel').carouFredSel({
-					responsive: true,
-					scroll: 1,
-					items: {
-						width: 200,
-						visible: {
-							min: 3,
-							max: 10
-						}
-					}
-				});
-
-			});
-	</script>	
-	<style type="text/css">
-			#carousel div {
-				text-align: center;
-				width: 300px;
-				height: 220px;
-				float: left;
-				position: relative;
-			}
-
-			#carousel div img {
-				border: none;
-				-moz-transition: all 0.2s linear;
-    			-o-transition: all 0.2s linear;    
-    			-webkit-transition: all 0.2s linear;
-				transition: all 0.2s linear;
-				
-			}
-			#carousel div img:hover {
-				margin-top: -20px;
-				/*background: rgba(255,255,255,.2);*/
-				border-radius: 10px;
-				width: 180px;
-				height:180px;
-				/*-moz-transform:rotate(10deg);
-				-ms-transform:rotate(10deg);
-				-o-transform:rotate(10deg);
-				-webkit-transform:rotate(10deg);*/				
-			}			
-			#carousel div span {
-				text-align: center;
-				color: #333;
-				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-				font-size: 14px;
-				font-weight: bold;
-				display: block;
-				margin-top: -20px;
-			}
-		</style>
-
-	<!-- ARCHIVOS PARA LA BARRA DE DOCK -->	
-	<script type="text/javascript" src="barradock/interface.js"></script>		
-	<link href="barradock/style.css" rel="stylesheet" type="text/css" />
 		
+
+		<!-- ARCHIVOS PARA LA ANIMACIÓN DEL SLIDER -->
+		<title>LayerSlider - The Parallax Effect Slider from Kreatura Media</title>
+		<link rel="stylesheet" href="slider/css/page.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="slider/css/layerslider.css" type="text/css" media="screen">
+		<noscript>
+			<link rel="stylesheet" href="slider/css/noscript.css" type="text/css" media="screen">
+		</noscript>
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="slider/css/ie7.css" type="text/css" media="screen">
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="slider/js/html5.js"></script>
+		<![endif]-->				
 </head>
 <body class="loaded revealed">
-
-<div class="dock" id="dock">
-	<div class="dock-container">
-	  <a class="dock-item" href="#"><img src="barradock/images/home.png" alt="home" /><span>Home</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/email.png" alt="contact" /><span>Contact</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/portfolio.png" alt="portfolio" /><span>Portfolio</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/music.png" alt="music" /><span>Music</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/video.png" alt="video" /><span>Video</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/history.png" alt="history" /><span>History</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/calendar.png" alt="calendar" /><span>Calendar</span></a> 
-	  <a class="dock-item" href="#"><img src="barradock/images/rss.png" alt="rss" /><span>RSS</span></a> 
-	</div>
-</div>
-<script type="text/javascript">	
-	$(document).ready(
-		function()
-		{
-			$('#dock').Fisheye(
-				{
-					maxWidth: 50,
-					items: 'a',
-					itemsText: 'span',
-					container: '.dock-container',
-					itemWidth: 40,
-					proximity: 90,
-					halign : 'center'
-				}
-			)
-		}
-	);
-</script>
-
-
 
 	<script type="text/javascript">
 		var searchSection = 'mac';
 		var searchCountry = 'us';
 	</script>
-	<script src="js/globalnav.js" type="text/javascript" charset="utf-8"></script>
-	<nav id="globalheader" class="store globalheader-js svg globalheader-loaded globalheader-loaded">
-		<!--googleoff: all-->
+	<!--script src="js/globalnav.js" type="text/javascript" charset="utf-8"></script!-->
+	<nav id="globalheader" class=" globalheader-js svg globalheader-loaded globalheader-loaded">
 		<ul id="globalnav" role="navigation">
-			<li id="gn-apple"><a  href="#"><span>Menu</span></a></li>
-			<li id="gn-store"><a  class=" before" href="#"><span>Menu</span></a></li>
-			<li id="gn-mac"><a class="" href="#"><span>Menu</span></a></li>
-			<li id="gn-ipod"><a class="" href="#"><span>Menu</span></a></li>
-			<li id="gn-iphone"><a class=""  href="#"><span>Menu</span></a></li>
-			<li id="gn-ipad"><a  href="#"><span>Menu</span></a></li>
-			<li id="gn-itunes"><a  href="#"><span>Menu</span></a></li>
-			<li id="gn-support" class="gn-last"><a  href="#"><span>Menu</span></a></li>
+			<li id="gn-apple"><a  href="index.html"><span>Menu</span></a></li>
+			<li id="gn-store"><a  class=" before" href="nosotros.html"><span>Nosostros</span></a></li>
+			<li id="gn-mac"><a class="" href="servicios.html"><span>Servicios</span></a></li>
+			<li id="gn-ipod"><a class="" href="clientes.html"><span>Clientes</span></a></li>
+			<li id="gn-iphone"><a class=""  href="soporte.html"><span>Soporte</span></a></li>
+			<li id="gn-ipad"><a  href="noticias.html"><span>Noticias</span></a></li>
+			<li id="gn-itunes"><a  href="locales.html"><span>Locales</span></a></li>
+			<li id="gn-itunes"><a  href="contacto.html"><span>Contacto</span></a></li>
 		</ul>
-		<!--googleon: all-->
 		<div id="globalsearch">
-			<form action="http://www.apple.com/search/" method="get" class="search empty" id="g-search"><div class="sp-label">
+			<form action="http://www.publicidadpunto4.com/search/" method="get" class="search empty" id="g-search"><div class="sp-label">
 				<label for="sp-searchtext">Buscar</label>
 				<input autocomplete="off" name="q" id="sp-searchtext" accesskey="s" type="text"><div class="reset"></div>
 			<div class="spinner hide"></div></div><input value="mac" name="sec" id="search-section" type="hidden"></form>
@@ -147,165 +68,139 @@
 			<div id="sp-results"></div>
 		</div>
 	</nav>
-	<script type="text/javascript">
+	<!--script type="text/javascript">
 		AC.GlobalNav.Instance = new AC.GlobalNav();
-	</script>
-	<div id="globalheader-loaded-test"></div>
-
-
+	</script!-->
+	<!-- <div id="globalheader-loaded-test"></div> -->
 
 <div id="main" data-hires="true">
-	<div class="productbrowser content pb-dynamic pb-opened" id="pb-mac">
-	<div class="pb-slider">
-		<div style="width: 3920px;" class="pb-slide">
-			<ul entered="next" style="width: 928px; margin: 0px 26px;" page="1" class="ul-slider">
-			<div id="carousel">
-				<div>
-					<a href="#"><img src="img/fruit1.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit2.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit3.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit4.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit5.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit6.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit7.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit8.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit9.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit10.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit11.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				<div>
-					<a href="#"><img src="img/fruit12.png" alt="fruit1" width="200" height="200" /></a>
-					<span>Apple</span>
-				</div>
-				
-			</div>
-			</ul>
-		</div>
+	<div class="productbrowser content pb-dynamic pb-opened" id="pb-mac" style="height:80px;">
+	<div class="pb-slider" style="height:50px; font-style: italic; color:#adadaf;">	
+		<p style="font-size:30px; margin-top:10px;">Consulte nuestras promociones</p>		
 	</div>
-
 	<div class="pb-pageindicator roundedbottom page-1" id="pb-pi-mac">
 		<div>
 			<b class="caret"></b>
-			<a page="1" class="page active">Mac</a>
+			<a page="1" class="page active">.</a>
 		</div>
 	</div>
 </div>
+<script src="js/productbrowser.js" type="text/javascript" charset="utf-8"></script>	
 
-<script src="js/productbrowser.js" type="text/javascript" charset="utf-8"></script>
+	<section  class="content promo-rotation" >			
+            <div id="layerslider">
+				<div class="ls-layer" rel="slidedelay: 3000;">
+					<img class="ls-bg" src="slider/gallery/l1.jpg" alt="layer">
+					<img class="ls-s2" src="slider/gallery/l11.png" alt="sublayer" style="durationin: 2000; easingin: easeOutExpo; slidedirection: top; delayin: 1000">
+					<img class="ls-s3" src="slider/gallery/l12.png" alt="sublayer" rel="durationin: 2300; easingin: easeOutElastic; slidedirection: bottom; delayin: 1000">
+					<img id="leaf1" class="ls-s4" src="slider/gallery/l13.png" alt="sublayer" rel="slidedirection: left">
+					<img class="ls-s5" src="slider/gallery/l15.png" alt="sublayer" rel="slidedirection: top">
+					<img id="leaf2" class="ls-s7" src="slider/gallery/l16.png" alt="sublayer" rel="slidedirection: bottom">
+					<img id="leaf3" class="ls-s2" src="slider/gallery/l17.png" alt="sublayer" rel="slidedirection: top">
+					<img style="left: 240px; top: 200px;" class="ls-linkto-4 ls-s6" src="slider/gallery/l14.png" alt="sublayer" rel="slidedirection: top">
+				</div>
 
-	<section id="showcase" class="content promo-rotation">
-		<div class="promo-lead">
-			<a class="lead" href="#">
-				<img class="roundedtop" src="img/promo_lead_macbook_pro.jpg" height="409" width="980">
-			</a>
-		</div>
+				<div class="ls-layer" rel="slidedelay: 1000;">
+					<div class="ls-s0">
+						<iframe width="1000" height="500" src="#" frameborder="0" allowfullscreen></iframe>
+						<!-- <iframe src="http://player.vimeo.com/video/24535181?color=ff9933" width="1000" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>	 -->					
+					</div>
+					<div class="ls-s2" style="padding: 20px; background: #ff9933; width: 440px; left: 500px; top: 20px; border-radius: 5px; moz-border-radius: 5px; webkit-border-radius: 5px; color: white; text-shadow: none; font-size: 20px; font-weight: bold; line-height: auto; box-shadow: 0px 0px 20px -5px black">
+						How about embedding and auto-playing YouTube and Vimeo videos with auto-pause slideshow feature?
+					</div>
+				</div>
 
-		<div class="promos promoset">
-			<a class="column first" href="#">
-				<img src="img/punto4_logo.png"  height="200" width="200">
-			</a>
-			<a class="column second" href="#">
-				<img src="img/punto4_logo.png"  height="200" width="200">
-			<a class="column third" href="#">
-				<img src="img/punto4_logo.png"  height="200" width="200">
-			</a>
-		</div>
+				<div class="ls-layer">
+					<img class="ls-bg" src="slider/gallery/l3.jpg" alt="layer">
+					<img class="ls-s2" src="slider/gallery/l31.png" alt="sublayer" rel="durationin: 5800; easingin: easeOutQuad">
+					<img class="ls-s3" src="slider/gallery/l32.png" alt="sublayer" rel="durationin: 5600; easingin: easeOutQuad">
+					<img class="ls-s5" src="slider/gallery/l33.png" alt="sublayer" rel="durationin: 1200">
+					<img class="ls-s5" src="slider/gallery/l34.png" alt="sublayer" rel="durationin: 1350">
+					<img class="ls-s6" src="slider/gallery/l36.png" alt="sublayer" rel="durationin: 4000; easingin: easeOutExpo; durationout: 800; delayout: 50">
+					<img class="ls-s7" src="slider/gallery/l35.png" alt="sublayer" rel="durationin: 5000; easingin: easeOutExpo; durationout: 800; delayout: 100">
+					<img class="ls-s8" src="slider/gallery/l37.png" alt="sublayer">
+					<img class="ls-s9" src="slider/gallery/l38.png" alt="sublayer">
+					<img class="ls-s10" src="slider/gallery/l39.png" alt="sublayer">
+					<img class="ls-s11" src="slider/gallery/l310.png" alt="sublayer" rel="delayin: 1300; slidedirection: fade; slideoutdirection: top; durationin: 1000;">
+					<img class="ls-s11" src="slider/gallery/l311.png" alt="sublayer" rel="delayin: 1000; slidedirection: fade; slideoutdirection: top; durationin: 1000;">
+				</div>
 
-		<section id="college" class="grid2col roundedbottom">
-			<a href="">
-			<img src="img/college_student_sept_2012.jpg" class="hero" alt="Offer ends Sept. 21." height="107" width="980"
-				></a>		
-		</section><!--/college-->
+				<div class="ls-layer" rel="slidedirection: top; slidedelay: 6000">
+					<img class="ls-bg" src="slider/gallery/l2.jpg" alt="layer">
+					<img id="clouds" class="ls-s2" src="slider/gallery/l21.png" alt="sublayer">
+					<img class="ls-s3" src="slider/gallery/l22.png" alt="sublayer">
+					<img class="ls-s4" src="slider/gallery/l23.png" alt="sublayer">
+					<img class="ls-s5" src="slider/gallery/l24.png" alt="sublayer">
+					<img class="ls-s6" src="slider/gallery/l25.png" alt="sublayer">
+					<img class="ls-s7" src="slider/gallery/l26.png" alt="sublayer">
+					<img class="ls-s8" src="slider/gallery/l27.png" alt="sublayer">
+					<img class="ls-s9" src="slider/gallery/l28.png" alt="sublayer">
+					<img class="ls-s10" src="slider/gallery/l29.png" alt="sublayer" rel="slidedirection: bottom; durationin: 1000; easingin: easeOutExpo; delayin: 1500; delayout: 50">
+				</div>
+
+				<div class="ls-layer">
+
+					<img class="ls-bg" src="slider/gallery/l4.jpg" alt="layer">
+					<img class="ls-s6" src="slider/gallery/l45.png" alt="sublayer" style="durationin: 6000; easingin: easeOutQuart">
+					<img class="ls-s5" src="slider/gallery/l44.png" alt="sublayer" style="durationin: 3000; easingin: easeOutExpo">
+					<img class="ls-s2" src="slider/gallery/l41.png" alt="sublayer" style="delayin: 1400; easingin: easeOutBack">
+					<img class="ls-s3" src="slider/gallery/l42.png" alt="sublayer" style="delayin: 1400; easingin: easeOutBack">
+					<img class="ls-s4" src="slider/gallery/l43.png" alt="sublayer" style="delayin: 1400; easingin: easeOutBack">
+				</div>
+				
+				<div class="ls-layer">
+					<img class="ls-bg" src="slider/gallery/l5.jpg" alt="layer">
+					<img id="earth" class="ls-s3" src="slider/gallery/l51.jpg" alt="sublayer">
+					<img class="ls-s4" src="slider/gallery/l52.png" alt="sublayer">
+					<img class="ls-s6" src="slider/gallery/l53.png" alt="sublayer">
+					<img class="ls-s8" src="slider/gallery/l54.png" alt="sublayer">
+					<p id="l5text1" class="ls-s12">
+						2003 UB <span class="small">313</span>
+					</p>
+					<p id="l5text2" class="ls-s14">
+						Charon
+					</p>
+					<p id="l5text3" class="ls-s16">
+						Ceres
+					</p>
+					<p id="l5text4" class="ls-s8">
+						This is <a target="_blank" href="http://en.wikipedia.org/wiki/Charon_(moon)">an external link</a> to Wikipedia.
+					</p>
+				</div>				
+			</div>
 
 	</section><!--/showcase-->
-	
-	<div class="grid2col" id="whymac">
-		<section class="column first content">
-			<h1>Aprendiendo</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco</p>
-			<ul>
-				<li><a href="#">Probando</a></li>
-				<li><a href="#">Probando</a></li>
-				<li><a href="#">Probando</a></li>
-				<li><a href="#">Probando</a></li>
-			</ul>
-			<img class="bottom" src="img/punto4_logo.png" alt="" height="119" width="119">
-		</section>
-		<section class="column last content">
-			<h1>Holslsls lslslsl lslsl </h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim a</p>
-			<ul>
-				<li><a href="#">Probando</a></li>
-				<li><a href="#">Probando</a></li>
-				<li><a href="#">Probando</a></li>
-				<li><a href="#">Probando</a></li>
-			</ul>
-			<img class="bottom" src="img/punto4_logo.png" alt="" height="119" width="119">
-		</section>
-	</div>
-	
 
 	<div id="buy" class="content">
 		<div id="buystrip" class="grid4col roundedtop">
 			<div class="column first">
-				<img class="product" src="img/punto4_logo.png" alt="" height="119" width="119">
+				<img class="product" src="img/punto4_logo.gif" alt="" height="119" width="119">
 			</div>
 			<div class="column second">
-				<h3>Haga su pedido en linea</h3>
-				<p>Escribanos que producto quiere que se lo hagamos</p>
+				<h3>Haga su pedido</h3>
+				<p>Escribanos que producto quiere a</p>
+				<p>ventas@publiciadadpunto4.com</p>
 			</div>
 			<div class="column third">
-				<h3>Vicite la Tienda</h3>
-				<p>Av. No se como se llama</p>
+				<h3>Vicitenos en:</h3>
+				<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
 			</div>
 			<div class="column last">
 				<h3>Llamar a punto4</h3>
-				<p>Telf. 44444</p>
+				<p>rpm: #021 44 44</p>
+				<p>Tlf: 322934</p>
+				<p>Cel: 983708020</p>
 			</div>
 		</div>
 		<div id="buystrip_extra" class="grid3col">
 			<div class="column first">
-				<p>Holasssssssssssssssssssssss</p>
+				<p>Empresa que tiene: </p>
 			</div>
 			<div class="column second">
-				<p>Holasssssssssssssssssssssss</p>
+				<p>Compromiso</p>
 			</div>
 			<div class="column last">
-				<p>Holasssssssssssssssssssssss</p>
+				<p>Puntualidad y valor</p>
 			</div>
 		</div>
 	</div>
@@ -314,69 +209,85 @@
 	<footer id="globalfooter">
 		<div id="breadory">
 			<ol id="breadcrumbs">
-				<li class="home"><a href="http://www.apple.com/">Inicio</a></li>
-				<li>Mac</li>
+				<li><a href="http://www.publicidadpunto4.com/">Quizas te interese</a></li>
+				
 			</ol>
 			<div id="directorynav" class="mac">
 				<div id="dn-cola" class="column first">
 					<h3>Diseños</h3>
 					<ul>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Creaciones</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Educación</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Estudiantes</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Ciencia</a></li>
+						<li><a  href="#">Creaciones</a></li>
+						<li><a  href="#">Educación</a></li>
+						<li><a  href="#">Estudiantes</a></li>
+						<li><a  href="#">Ciencia</a></li>
 					</ul>
 				</div>
 				<div id="dn-colb" class="column">
 					<h3>Accesorios</h3>
 					<ul>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Creaciones</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Educación</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Estudiantes</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Ciencia</a></li>
+						<li><a  href="#">Creaciones</a></li>
+						<li><a  href="#">Educación</a></li>
+						<li><a  href="#">Estudiantes</a></li>
+						<li><a  href="#">Ciencia</a></li>
 					</ul>		
 				</div>
 				<div id="dn-colc" class="column">
-					<h3>Applications</h3>
+					<h3>Aplicaciones</h3>
 					<ul>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Creaciones</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Educación</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Estudiantes</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Ciencia</a></li>
+						<li><a  href="#">Creaciones</a></li>
+						<li><a  href="#">Educación</a></li>
+						<li><a  href="#">Estudiantes</a></li>
+						<li><a  href="#">Ciencia</a></li>
 					</ul>
 				</div>
 				<div id="dn-cold" class="column last">
 					<h3>Mercados</h3>
 					<ul>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Creaciones</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Educación</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Estudiantes</a></li>
-						<li><a  href="http://www.publicidadpunto4.com/business/mac/">Ciencia</a></li>
+						<li><a  href="#">Creaciones</a></li>
+						<li><a  href="#">Educación</a></li>
+						<li><a  href="#">Estudiantes</a></li>
+						<li><a  href="#">Ciencia</a></li>
 					</ul>
 				</div>
 				<div class="capbottom"></div>
 			</div>
 		</div>
-		<p class="gf-buy"> Separe su pedido en <a onclick='' href="http://store.publicidadpunto4.com/us">Tienda en linea</a></p>
-
 		<ul class="gf-links piped">
-			<li><a onclick='' href="http://www.publicidadpunto4.com/about/" class="first">Punto4 Info</a></li>
-			<li><a onclick='' href="http://www.publicidadpunto4.com/sitemap/">Mapa del sitio</a></li>
-			<li><a onclick='' href="http://www.publicidadpunto4.com/hotnews/">Noticias</a></li>
-			<li><a onclick='' href="http://www.publicidadpunto4.com/rss/">RSS Feeds</a></li>
-			<li><a onclick='' href="http://www.publicidadpunto4.com/contact/" class="contact_us">Contacto</a></li>
-			<li><a onclick='' href="" class="choose"><img src="img/logo_peru.png" height="22" width="22"></a></li>
+			<li><a href="#" class="first">Punto4 Info</a></li>
+			<li><a href="#">Clientes</a></li>
+			<li><a href="#">Soporte técnico</a></li>
+			<li><a href="#">Noticias</a></li>
+			<li><a href="#">Locales</a></li>
+			<li><a href="#" class="contact_us">Contacto</a></li>
+			<li><a title="Síguenos en skype" target="_blank" href="http://skype.com/punto4" class="choose"><img src="img/social/skype.png" height="30" width="30"></a></li>
+			<li><a title="Síguenos en facebook" target="_blank" href="http://facebook.com/punto4" class="choose"><img src="img/social/Facebook.png" height="30" width="30"></a></li>
+			<li><a title="Síguenos en twitter" target="_blank" href="http://twitter.com/punto4" class="choose"><img src="img/social/twitter.png" height="30" width="30"></a></li>
+			<li><a title="Síguenos en g+" target="_blank" href="http://pluss.com/punto4" class="choose"><img src="img/social/g_plus.png" height="30" width="30"></a></li>
 		</ul>
-
 		<div class="gf-sosumi">
 			<p>Copyright © 2012 Punto4.</p>
 			<ul class="piped">
-				<li><a onclick='' href="http://www.publicidadpunto4.com/legal/terms/site.html" class="first">Términos de uso</a></li>
-				<li><a onclick='' href="http://www.publicidadpunto4.com/privacy/">Políticas de Privacidad</a></li>
+				<li><a onclick='' href="#" class="first">Términos de uso</a></li>
+				<li><a onclick='' href="#">Políticas de Privacidad</a></li>
 			</ul>
 		</div>
-
 	</footer><!--/globalfooter-->
-	<div id="supportsThreeD"></div>
+
+	
+		<script src="slider/js/jqueryui.js" type="text/javascript"></script>
+		<script src="slider/js/plugins.js" type="text/javascript"></script>
+		<script src="slider/js/layerslider.kreaturamedia.jquery-min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#layerslider').layerSlider({
+					skin : 'lightskin',
+					skinsPath : 'slider/layerslider/skins/',
+					durationTimeIn : 1500,
+					durationTimeOut : 1500,
+					// yourLogo			: 'http://kreaturamedia.com/static/img/kmlogo.png',
+					// yourLogoStyle		: 'position: absolute; z-index: 1001; left: -30px; top: -30px; height: 100px;'
+				});
+			});
+		</script>	
 </body>
 </html>

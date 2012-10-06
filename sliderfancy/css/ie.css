@@ -1,0 +1,18 @@
+.searchField input{
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+width: 204px;
+}
+.search{
+z-index: 10;
+}
+#menu>li{
+background: url(../images/menu_bg.png) center top repeat-x;
+}
+h3, h4{
+letter-spacing: -0.5px;
+}
+/* -----------------for pie------------------- */
+.readMore, .readMore2, #menu>li, .searchField input, .submenu_1 li, .submenu_2 li, #form1 input, #form1 textarea {position: relative; behavior: url(js/PIE.htc); }
+.submenu_1, .submenu_2, #content>ul>li{position: absolute; behavior: url(js/PIE.htc); }
