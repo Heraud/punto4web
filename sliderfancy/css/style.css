@@ -2,12 +2,40 @@
 @import "jquery.fancybox-1.3.4.css";
 @import "grid.css";
 /* Getting the new tags to behave */
-article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video {
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,header,hgroup,keygen,meter,nav,output,progress,section,source,video {
 display:block;
 }
 mark,rp,rt,ruby,summary,time {
 display:inline;
+
 }
+/*global*/
+
+#glob {
+position:absolute;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:2;
+}
+.spinner {
+position:fixed;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+z-index:9999;
+background:url( "../images/ajax-loader.gif") 50% 50% no-repeat #199bff;
+}
+#bgStretch {
+z-index:1;
+}
+#bgStretch>img {
+background: #199bff; 
+}
+
+
+
 
 /*menu*/
 .menu {
@@ -149,7 +177,7 @@ box-shadow: 0 1px 1px rgba(0,0,0,0.32);
 #contente {
 /*position:relative;*/
 width:100%;
-height:600px;
+height:700px;
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 margin: 0 auto 10px;
@@ -177,7 +205,7 @@ border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 margin: 10px 0 0 10px;
-background: #fff;
+background: transparent;
 }
 .hline{
 width: 100%;
@@ -737,6 +765,7 @@ text-align:right;
 text-align:center;
 }
 .wrapper {
+	margin-top: -40px;
 width:100%;
 overflow:hidden;
 }
@@ -777,14 +806,14 @@ margin:0 auto;
 /*google map*/
 .google_map{
 border-radius: 0px;
-width: 100%;
+width: 520%;
 height: 291px;
 border: none;
 box-shadow: none;
 background-color: #199bff;
 background-image: url(../images/ajax-loader.gif);
 background-repeat: no-repeat;  
-background-position: 50%;
+background-position: 100%;
 position:  relative;
 overflow: hidden;
 margin: 4px 0 23px;
@@ -803,7 +832,7 @@ background: none;
 border: 1px solid #e7e6e6;
 color:#929292;
 padding: 7px 10px;
-text-transform: uppercase;
+/*text-transform: uppercase;*/
 width: 208px;
 outline:none;
 box-shadow:none;
@@ -813,7 +842,7 @@ border-radius: 5px;
 }
 #form1 textarea {
 width: 323px;
-height: 340px;
+height: 300px;
 overflow:auto;
 resize: none;
 }

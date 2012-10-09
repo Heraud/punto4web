@@ -10,7 +10,7 @@ include("sliderfancy/js/superfish.js");
 include("sliderfancy/js/switcher.js");
 include("sliderfancy/js/bgStretch.js");
 include("sliderfancy/js/sImg.js");
-include("sliderfancy/js/forms.js");
+
 include("sliderfancy/js/MathUtils.js");
 include("sliderfancy/js/jquery.cycle.all.min.js");
 
@@ -243,7 +243,7 @@ $(window).load(function () {
     var nav = $('.menu');
     nav.navs({
 		useHash:true,
-        defHash: '#!/page_splash',
+        defHash: '#!/page',
         hoverIn:function(li){
             $('>strong',li).stop().animate({'height':'85px'},400,'easeOutExpo');
         },

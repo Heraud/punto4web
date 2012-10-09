@@ -21,13 +21,13 @@ v\:fill { behavior:url(#default#VML); }
 
 /* VARIANTS */
 #globalheader #globalnav.tabs6-nosearch li a { width:163px; background-image:url(../global/nav/images/globalnav_tabs6-nosearch.png); }
-#globalheader #globalnav.tabs6-nosearch li#gn-apple a { width:165px; }
+#globalheader #globalnav.tabs6-nosearch li#gn-punto4 a { width:165px; }
 #globalheader #globalnav.tabs7-nosearch li a { width:140px; background-image:url(../global/nav/images/globalnav_tabs7-nosearch.png); }
-#globalheader #globalnav.tabs7-nosearch li#gn-apple a { width:140px; }
+#globalheader #globalnav.tabs7-nosearch li#gn-punto4 a { width:140px; }
 #globalheader #globalnav.nosearch       li a { width:122px; background-image:url(../global/nav/images/globalnav_nosearch.png); }
-#globalheader #globalnav.nosearch       li#gn-apple a { width:126px; }
+#globalheader #globalnav.nosearch       li#gn-punto4 a { width:126px; }
 #globalheader #globalnav.tabs7          li a { width:117px; background-image:url(../global/nav/images/globalnav_tabs7.png); }
-#globalheader #globalnav.tabs7          li#gn-apple a { width:114px; }
+#globalheader #globalnav.tabs7          li#gn-punto4 a { width:114px; }
 
 /* ACTION STATES */
 #globalheader #globalnav li a { background-position:100% 0; outline:none; }
@@ -36,11 +36,11 @@ v\:fill { behavior:url(#default#VML); }
 #globalheader #globalnav li a:focus  { background-position:100% -72px; }
 #globalheader #globalnav li a:active { background-position:100% -108px; }
 
-#globalheader #globalnav li#gn-apple a { background-position:0 0; }
-#globalheader #globalnav li#gn-apple a.before { background-position:0 -36px; }
-#globalheader #globalnav li#gn-apple a:hover,
-#globalheader #globalnav li#gn-apple a:focus  { background-position:0 -72px; }
-#globalheader #globalnav li#gn-apple a:active { background-position:0 -108px; }
+#globalheader #globalnav li#gn-punto4 a { background-position:0 0; }
+#globalheader #globalnav li#gn-punto4 a.before { background-position:0 -36px; }
+#globalheader #globalnav li#gn-punto4 a:hover,
+#globalheader #globalnav li#gn-punto4 a:focus  { background-position:0 -72px; }
+#globalheader #globalnav li#gn-punto4 a:active { background-position:0 -108px; }
 
 /* VARIANT ACTION STATES */
 #globalheader #globalnav.tabs6-nosearch li.gn-last a { background-position:-165px 0; }
@@ -59,13 +59,13 @@ v\:fill { behavior:url(#default#VML); }
 #globalheader #globalnav.nosearch       li.gn-last a:active { background-position:-126px -108px; }
 
 /* ON STATES */
-#globalheader.store   li#gn-store   a,
-#globalheader.mac     li#gn-mac     a,
-#globalheader.ipod    li#gn-ipod    a,
-#globalheader.iphone  li#gn-iphone  a,
-#globalheader.ipad    li#gn-ipad    a,
-#globalheader.itunes  li#gn-itunes  a,
-#globalheader.support li#gn-support a { background-position:right -144px !important; }
+#globalheader.nosotros   li#gn-nosotros   a,
+#globalheader.servicios     li#gn-servicios     a,
+#globalheader.clientes    li#gn-clientes    a,
+#globalheader.soporte  li#gn-soporte  a,
+#globalheader.noticias    li#gn-noticias    a,
+#globalheader.locales  li#gn-locales  a,
+#globalheader.contacto li#gn-contacto a { background-position:right -144px !important; }
 
 #globalheader.gn-last #globalnav.tabs6-nosearch li.gn-last a { background-position:-165px -144px !important; }
 #globalheader.gn-last #globalnav.tabs7-nosearch li.gn-last a { background-position:-140px -144px !important; }
@@ -74,16 +74,17 @@ v\:fill { behavior:url(#default#VML); }
 /* TEXT */
 #globalheader            #globalnav li            a span { display:block; width:100%; height:30px; margin:3px auto; background:url(../global/nav/images/globalnav_text.png) no-repeat 50% 0; _background-image:url(../global/nav/images/globalnav_text.gif); }
 #globalheader.svg        #globalnav li            a span { background-image:url(../global/nav/images/globalnav_text.png); }
+/*#globalheader.svg        #globalnav li            a span { background-image:url(../global/nav/images/globalnav_text.svg); }*/
 #globalheader.decelerate #globalnav li            a span,
 #globalheader.ios3       #globalnav li            a span { background-image:url(../global/nav/images/globalnav_text.png); }
-#globalheader            #globalnav li#gn-apple   a span { background-position:50% 0; }
-#globalheader            #globalnav li#gn-store   a span { background-position:50% -30px; }
-#globalheader            #globalnav li#gn-mac     a span { background-position:50% -60px; }
-#globalheader            #globalnav li#gn-ipod    a span { background-position:50% -90px; }
-#globalheader            #globalnav li#gn-iphone  a span { background-position:50% -120px; }
-#globalheader            #globalnav li#gn-ipad    a span { background-position:50% -150px; }
-#globalheader            #globalnav li#gn-itunes  a span { background-position:50% -180px; }
-#globalheader            #globalnav li#gn-support a span { background-position:50% -210px; }
+#globalheader            #globalnav li#gn-punto4   a span { background-position:50% 0; }
+#globalheader            #globalnav li#gn-nosotros   a span { background-position:50% -30px; }
+#globalheader            #globalnav li#gn-servicios     a span { background-position:50% -60px; }
+#globalheader            #globalnav li#gn-clientes    a span { background-position:50% -90px; }
+#globalheader            #globalnav li#gn-soporte  a span { background-position:50% -120px; }
+#globalheader            #globalnav li#gn-noticias    a span { background-position:50% -150px; }
+#globalheader            #globalnav li#gn-locales  a span { background-position:50% -180px; }
+#globalheader            #globalnav li#gn-contacto a span { background-position:50% -210px; }
 
 /* GLOBAL SEARCH */
 #globalsearch { position:absolute; top:0; right:0; width:140px; padding:8px 12px; z-index:5; background:url(../global/nav/images/globalsearch_bg.png) no-repeat 100% 0; }

@@ -25,6 +25,7 @@
 
 	<!-- ARCHIVOS PARA EL CAROUSEL -->	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!--script src="js/jquery.js" type="text/javascript"></script!-->
 		<script src="js/jquery.carouFredSel-5.6.4-packed.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(function() {
@@ -42,62 +43,10 @@
 
 			});
 	</script>	
-	<style type="text/css">
-			#carousel div {
-				text-align: center;
-				width: 300px;
-				height: 220px;
-				float: left;
-				position: relative;
-
-				filter: alpha(opacity=50);
-				-moz-opacity:0.5;
-				-khtml-opacity:0.5;
-				opacity: 0.5
-				
-
-			}
-			#carousel div:hover {
-				filter: alpha(opacity=100);
-				-moz-opacity:0.9;
-				-khtml-opacity:0.9;
-				opacity: 0.9
-
-
-			}
-
-			#carousel div img {
-				border: none;
-				-moz-transition: all 0.2s linear;
-    			-o-transition: all 0.2s linear;    
-    			-webkit-transition: all 0.2s linear;
-				transition: all 0.2s linear;
-
-				
-				
-			}
-			#carousel div img:hover {
-				margin-top: -20px;
-				/*background: rgba(255,255,255,.2);*/
-				width: 180px;
-				height:180px;
-				/*-moz-transform:rotate(10deg);
-				-ms-transform:rotate(10deg);
-				-o-transform:rotate(10deg);
-				-webkit-transform:rotate(10deg);*/				
-			}			
-			#carousel div span {
-				text-align: center;
-				color: #333;
-				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-				font-size: 14px;
-				font-weight: bold;
-				display: block;
-				margin-top: -20px;
-			}
-		</style>
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 
 	<!-- ARCHIVOS PARA LA ANIMACIÓN DEL CONTENIDO -->
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:600' rel='stylesheet'>
 	<!--[if lt IE 9]>
 	    <link href='http://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet'>
 	    <link href='http://fonts.googleapis.com/css?family=Lora:400' rel='stylesheet'>
@@ -121,18 +70,19 @@
 		var searchSection = 'mac';
 		var searchCountry = 'us';
 	</script>
+	<div class="spinner"></div>
 	<!--script src="js/globalnav.js" type="text/javascript" charset="utf-8"></script!-->
-	<nav id="globalheader" class="store globalheader-js svg globalheader-loaded globalheader-loaded">
+	<nav id="globalheader" class="nosotros globalheader-js svg globalheader-loaded globalheader-loaded">
 		<!--googleoff: all-->
 		<ul id="globalnav" role="navigation">
-			<li id="gn-apple"><a  href="index.html"><span>Menu</span></a></li>
-			<li id="gn-store"><a  class=" before" href="nosotros.html"><span>Nosostros</span></a></li>
-			<li id="gn-mac"><a class="" href="servicios.html"><span>Servicios</span></a></li>
-			<li id="gn-ipod"><a class="" href="clientes.html"><span>Clientes</span></a></li>
-			<li id="gn-iphone"><a class=""  href="soporte.html"><span>Soporte</span></a></li>
-			<li id="gn-ipad"><a  href="noticias.html"><span>Noticias</span></a></li>
-			<li id="gn-itunes"><a  href="locales.html"><span>Locales</span></a></li>
-			<li id="gn-itunes"><a  href="contacto.html"><span>Contacto</span></a></li>
+			<li id="gn-punto4"><a  href="index.html"><span>Inicio</span></a></li>
+			<li id="gn-nosotros"><a  class=" before" href="nosotros.html"><span>Nosostros</span></a></li>
+			<li id="gn-servicios"><a class="" href="servicios.html"><span>Servicios</span></a></li>
+			<li id="gn-clientes"><a class="" href="clientes.html"><span>Clientes</span></a></li>
+			<li id="gn-soporte"><a class=""  href="soporte.html"><span>Soporte</span></a></li>
+			<li id="gn-noticias"><a  href="noticias.html"><span>Noticias</span></a></li>
+			<li id="gn-locales"><a  href="locales.html"><span>Locales</span></a></li>
+			<li id="gn-contacto"><a  href="contacto.php"><span>Contacto</span></a></li>
 		</ul>
 		<!--googleon: all-->
 		<div id="globalsearch">
@@ -157,7 +107,7 @@
 		<div id="carousel" class="menu">
 			<!-- <ul id="menu"> -->
 			<div>
-				<a href="#!/page_splash"><img src="img/browser/QuienesSomos.png" alt="QuienesSomos" width="200" height="200" /></a>
+				<a href="#!/page"><img src="img/browser/QuienesSomos.png" alt="QuienesSomos" width="200" height="200" /></a>
 				<span></span>
 			</div>
 			<div>
@@ -177,49 +127,243 @@
 				<span></span>
 			</div>
 			<div>
-				<a href="#"><img src="img/browser/Proveedores.png" alt="Proveedores" width="200" height="200" /></a>
+				<a href="#!/Proveedores"><img src="img/browser/Proveedores.png" alt="Proveedores" width="200" height="200" /></a>
 				<span></span>
 			</div>
 			<!-- </ul> -->
 		</div>		
 	</div>
 	<div class="pb-pageindicator roundedbottom page-1" id="pb-pi-mac">
-		<div>
+		<div style="font-size:15px; font-style: italic; color:#adadaf;">
 			<b class="caret"></b>
-			<a page="1" class="page active">(^_^)</a>
+			<a page="1" class="page active" >Nosotros</a>
 		</div>
 	</div>
 </div>
 <script src="js/productbrowser.js" type="text/javascript" charset="utf-8"></script>	
+	<div class="content" id="content" style="font-size:13px; text-align:justify; height:620px;">
+		<div id="contente" >
+		<ul >
+            <li id="page">
+				<div class="grid2cola" id="policy">
+					<div class="column first">
+						<h3> <font style="margin-left:4em;">Sepa un poco más a cerca de nosotros</font></h3>
+						<ul class="square" style="padding:1em;">
+							<p>Punto Cuatro empresa líder de publicidad, peruana ubicado en el Departamento de Apurímac Provincia de Abancay, inició sus operaciones el 22 diciembre del 2009 como persona natural; convirtiéndose en la actualidad en la empresa con mayor cobertura en publicidad exterior e interior  en Apurímac y provincias, logrando alcanzar aceptación en muchos clientes que ahora depositan su confianza y seguridad de sus servicios.</p>
 
-	<section  class="content promo-rotation" style="background:cyan;">
-		<section id="contente" style=" background:blue;">
-            <ul style="background:orange;">          
-                <li id="page_splash"  style="background:red;">				
-                     
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                       
-                </li>                
-                      
-                <li id="NuestroPersonal"  style="background:red;">				
-                     
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                       
-                </li>                
-            </ul>   
-        </section>	
+							<p>En un inicio como toda empresa no nos fue tan fácil, tuvimos muchos obstáculos ya que no teníamos conocimientos de muchas cosas aun, ya con el tiempo fuimos perfeccionando cada área en la que la empresa se va desarrollando cada día hasta la actualidad, gracias al apoyo y la constante capacitación e innovación del personal se pudo superar muchos de los obstáculos.</p>
 
-	</section><!--/showcase-->
+							<p>La empresa se caracteriza a la fecha por lo profesionalismo con la que realiza los trabajos en todas las áreas, ya que hasta la fecha se ha demostrado puntualidad, calidad, eficaz y honradez ofreciendo los mejores precios para todos nuestros clientes que han depositado su confianza.</p>
+							<p>Vamos creciendo gracias a la recomendación de muchos de nuestros clientes que cada día ven la diferencia en nuestro servicios, siempre ofrecemos nuestra atención a nuestros clientes de la mejor manera ya que ellos son las personas que hablan de nosotros son parte de nuestra imagen y prestigio.</p>
+							<p>El éxito de toda empresa, va relacionado con la unidad y trabajo en equipo desde el personal de limpieza hasta el cargo mas alto siendo un líder y no un jefe, tenemos la frase de “Somos diferentes pero juntos hacemos familia, trabajo y sociedad”, y sobre todas las cosas vamos confiando en nuestro creador que es Dios.</p>
+							<p>Gracias a todos los que pertenecen y son parte de la EMPRESA DE MARKETING Y PUBLICIDAD PUNTO 4, y  a todos aquellos que se irán sumando cada día, siempre avanzaremos pensando en Uds. Con la idea de ofrecerles el mejor servicio, todos nos merecemos lo mejor.</p>
+						</ul>		
+					</div>
+					<div class="column last">
+						<div class="content truste" style="padding:0.5em;">
+							<br />
+							<img src="img/banner.jpg" alt="" width="285"/>						
+							<br />
+						</div>
+						<br />
+						<div class="content privacy-questions" style="padding:1em;">
+							<h3>Puedes encontrarnos en: </h3>
+								<h3>Haga su pedido</h3>
+								<p>Escribanos que producto quiere a</p>
+								<p>ventas@publiciadadpunto4.com</p>
+								<h3>Vicitenos en:</h3>
+								<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
+								<h3>Llamar a punto4</h3>
+								<p>rpm: #021 44 44</p>
+								<p>Tlf: 322934</p>
+								<p>Cel: 983708020</p>
+
+								<ul class="gf-links piped">
+									<li><a title="Síguenos en skype" target="_blank" href="http://skype.com/punto4" class="choose"><img src="img/social/Skype.png" height="30" width="30"></a></li>
+									<li><a title="Síguenos en facebook" target="_blank" href="http://facebook.com/punto4" class="choose"><img src="img/social/Facebook.png" height="30" width="30"></a></li>
+									<li><a title="Síguenos en twitter" target="_blank" href="http://twitter.com/punto4" class="choose"><img src="img/social/twitter.png" height="30" width="30"></a></li>
+									<li><a title="Síguenos en g+" target="_blank" href="http://pluss.com/punto4" class="choose"><img src="img/social/g_plus.png" height="30" width="30"></a></li>
+								</ul>
+							
+						</div>
+					</div>
+				</div>
+			</li>
+            <li id="NuestroPersonal">
+				<div class="grid2cola" id="policy">
+					<div class="column first">
+						<h3> <font style="margin-left:4em;">Nuestro Personal</font></h3>
+						<ul class="square" style="padding:1em;">
+							<p style="padding-left:1em;">Nuestro personal se mantiene constantemente capacitado para compartir contigo un mismo objetivo: obtener la publicidad exterior más novedosa e impactante del mercado. Por eso, nuestra gente se identifica con tu producto como si fuera propio, llevando este sentimiento a cada una de nuestras diferentes áreas:</p>
+						</ul>
+
+						<ul class="square" style="padding:1em; ">
+								<li>Área Administración.</li>
+								<li>Área mercadotecnia o ventas</li>
+								<li>Área finanzas</li>
+								<li>Área de seguridad y producción</li>
+								<li>Área de recursos humanos (personal)</li>
+								<li>Área de Relaciones Municipales.</li>
+								<li>Gerencia</li>
+								<br />
+							<img src="img/NuestroPersonal.jpg" width="380">
+						</ul>
+					</div>
+					<div class="column last">
+						<div class="content truste" style="padding:0.5em;">
+							<br />
+							<img src="img/banner.jpg" alt="" width="285"/>						
+							<br />
+						</div>
+						<br />
+						<div class="content privacy-questions" style="padding:1em; background:#dfe2e3;">
+							<h3>Puedes encontrarnos en: </h3>
+								<h3>Haga su pedido</h3>
+								<p>Escribanos que producto quiere a</p>
+								<p>ventas@publiciadadpunto4.com</p>
+								<h3>Vicitenos en:</h3>
+								<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
+								<h3>Llamar a punto4</h3>
+								<p>rpm: #021 44 44</p>
+								<p>Tlf: 322934</p>
+								<p>Cel: 983708020</p>						
+						</div>
+					</div>
+				</div>
+			</li>
+            <li id="Servicios">
+				<div class="grid2cola" id="policy">
+					<div class="column first">
+						<h3> <font style="margin-left:4em;">Servicios que ofrecemos</font></h3>
+						<ul class="square" style="padding:1em;">
+							<p style="padding-left:1em;">Gracias a las exigencias de nuestros clientes y sugerencias de muchos amigos cada día vamos innovando en nuestros servicios mejorando la calidad de impresión, calidad de material, maquinas de mejor resolución, realizamos letreros luminosos, en pana Flex, vinílico, y otros en traslucido, Grafica vehicular, Señaléticas en pvc, Acrílicos, Diseño grafico (Logos, imagen corporativa etc.), servicios de imprenta en general, fotocheck en pvc, enmicados, y mucho mas.</p>
+						</ul>						
+					</div>
+					<div class="column last">
+						<div class="content truste" style="padding:0.5em;">
+							<br />
+							<img src="img/banner.jpg" alt="" width="285"/>						
+							<br />
+						</div>
+						<br />
+						<div class="content privacy-questions" style="padding:1em; background:#dfe2e3;">
+							<h3>Puedes encontrarnos en: </h3>
+								<h3>Haga su pedido</h3>
+								<p>Escribanos que producto quiere a</p>
+								<p>ventas@publiciadadpunto4.com</p>
+								<h3>Vicitenos en:</h3>
+								<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
+								<h3>Llamar a punto4</h3>
+								<p>rpm: #021 44 44</p>
+								<p>Tlf: 322934</p>
+								<p>Cel: 983708020</p>						
+						</div>
+					</div>
+				</div>
+			</li>
+            <li id="NuestroLocal">
+				<div class="grid2cola" id="policy">
+					<div class="column first">
+						<h3> <font style="margin-left:4em;">Nuestro Local</font></h3>
+
+						<ul class="square" style="padding:1em;">
+							<p style="padding-left:1em;">Con la visión de poder contar muy pronto con nuestro propio local para una mayor y mejor atención de nuestros clientes, actualmente estamos en un local alquilado amplio y agradable también nos esforzarnos para mejorar cada día para que nuestros clientes se sientan a gusto como en casa, siempre innovando en publicidad, cuadros publicitarios en el interior.</p>
+							<img src="img/banner.jpg" width="550">
+						</ul>						
+					</div>
+					<div class="column last">
+						<div class="content truste" style="padding:0.5em;">
+							<br />
+							<img src="img/banner.jpg" alt="" width="285"/>						
+							<br />
+						</div>
+						<br />
+						<div class="content privacy-questions" style="padding:1em; background:#dfe2e3;">
+							<h3>Puedes encontrarnos en: </h3>
+								<h3>Haga su pedido</h3>
+								<p>Escribanos que producto quiere a</p>
+								<p>ventas@publiciadadpunto4.com</p>
+								<h3>Vicitenos en:</h3>
+								<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
+								<h3>Llamar a punto4</h3>
+								<p>rpm: #021 44 44</p>
+								<p>Tlf: 322934</p>
+								<p>Cel: 983708020</p>						
+						</div>
+					</div>
+				</div>
+			</li>
+            <li id="Meteriales">
+				<div class="grid2cola" id="policy">
+					<div class="column first">
+						<h3> <font style="margin-left:4em;">Materiales que Utilizamos</font></h3>
+						<ul class="square" style="padding:1em;">
+							<p style="padding-left:1em;">De primera, cuidadosamente seleccionados, especialmente pensados para hacer que cada elemento sea lo más seguro y eficiente posible. Los materiales con los que contamos para armar los avisos más impactantes son:
+								<br />
+								<br />
+							Fierro, fluorescentes, pvc, madera, banner, vinil, pinturas, entre otros según el requerimiento y necesidad.
+							</p>
+							<img src="img/banner.jpg" width="550">
+						</ul>						
+					</div>
+					<div class="column last">
+						<div class="content truste" style="padding:0.5em;">
+							<br />
+							<img src="img/banner.jpg" alt="" width="285"/>						
+							<br />
+						</div>
+						<br />
+						<div class="content privacy-questions" style="padding:1em; background:#dfe2e3;">
+							<h3>Puedes encontrarnos en: </h3>
+								<h3>Haga su pedido</h3>
+								<p>Escribanos que producto quiere a</p>
+								<p>ventas@publiciadadpunto4.com</p>
+								<h3>Vicitenos en:</h3>
+								<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
+								<h3>Llamar a punto4</h3>
+								<p>rpm: #021 44 44</p>
+								<p>Tlf: 322934</p>
+								<p>Cel: 983708020</p>						
+						</div>
+					</div>
+				</div>
+			</li>
+            <li id="Proveedores">
+				<div class="grid2cola" id="policy">
+					<div class="column first">
+						<h3> <font style="margin-left:4em;">PROVEEDORES DE MATERIALES Y MAQUINAS DE PUBLICIDAD</font></h3>
+						<ul class="square" style="padding:1em;">
+							<p style="padding-left:1em;">Invitamos a todos los proveedores de los materiales que usamos se sirvan enviar su propuesta ofreciendo sus mejores productos con la que nos caracteriza en los trabajos que realizamos, el área de compras estará dispuesto a contactarse
+							</p>
+							<img src="img/banner.jpg" width="550">
+						</ul>						
+					</div>
+					<div class="column last">
+						<div class="content truste" style="padding:0.5em;">
+							<br />
+							<img src="img/banner.jpg" alt="" width="285"/>						
+							<br />
+						</div>
+						<br />
+						<div class="content privacy-questions" style="padding:1em; background:#dfe2e3;">
+							<h3>Puedes encontrarnos en: </h3>
+								<h3>Haga su pedido</h3>
+								<p>Escribanos que producto quiere a</p>
+								<p>ventas@publiciadadpunto4.com</p>
+								<h3>Vicitenos en:</h3>
+								<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
+								<h3>Llamar a punto4</h3>
+								<p>rpm: #021 44 44</p>
+								<p>Tlf: 322934</p>
+								<p>Cel: 983708020</p>						
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul >
+        </div>
+		</div>
+	<br />
 	<div class="grid2col" id="whymac">
 		<section class="column first content">
 			<h1>Aprendiendo</h1>
@@ -242,41 +386,6 @@
 			</ul>
 			<img class="bottom" src="img/punto4_logo.gif" alt="" height="119" width="119">
 		</section>
-	</div>
-	
-
-	<div id="buy" class="content" style="font-size:11px;">
-		<div id="buystrip" class="grid4col roundedtop">
-			<div class="column first">
-				<img class="product" src="img/punto4_logo.gif" alt="" height="119" width="119">
-			</div>
-			<div class="column second">
-				<h3>Haga su pedido</h3>
-				<p>Escribanos que producto quiere a</p>
-				<p>ventas@publiciadadpunto4.com</p>
-			</div>
-			<div class="column third">
-				<h3>Vicitenos en:</h3>
-				<p>Jr.Arequipa 915-Abancay-Apurimac-Perú</p>
-			</div>
-			<div class="column last">
-				<h3>Llamar a punto4</h3>
-				<p>rpm: #021 44 44</p>
-				<p>Tlf: 322934</p>
-				<p>Cel: 983708020</p>
-			</div>
-		</div>
-		<div id="buystrip_extra" class="grid3col">
-			<div class="column first">
-				<p>Empresa que tiene: </p>
-			</div>
-			<div class="column second">
-				<p>Compromiso</p>
-			</div>
-			<div class="column last">
-				<p>Puntualidad y valor</p>
-			</div>
-		</div>
 	</div>
 	</div><!--/main-->
 
